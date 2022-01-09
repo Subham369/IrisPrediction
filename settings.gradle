@@ -1,0 +1,3 @@
+include ':irispredict'
+include ':app'
+rootProject.name = "IrisPrediction"
