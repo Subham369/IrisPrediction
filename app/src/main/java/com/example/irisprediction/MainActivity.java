@@ -51,7 +51,13 @@ public class MainActivity extends AppCompatActivity {
                     String v3 = ed3.getText().toString();
                     String v4 = ed4.getText().toString();
 
-                    String result= IrisData.doInference(MainActivity.this,v1,v2,v3,v4);
+                    String input_value[] =new String[4];
+                    input_value[0]=v1;
+                    input_value[1]=v2;
+                    input_value[2]=v3;
+                    input_value[3]=v4;
+
+                    String result= IrisData.doInference(MainActivity.this,input_value);
                     txt_output.setText(String.valueOf(result));
                 }
             }
